@@ -18,6 +18,7 @@
 		4EE5B3472C86AF2300B956E4 /* UpbitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3462C86AF2300B956E4 /* UpbitAPI.swift */; };
 		4EE5B3492C87EEA600B956E4 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3482C87EEA600B956E4 /* NavigationLazyView.swift */; };
 		4EE5B34C2C8892AD00B956E4 /* RandomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B34B2C8892AD00B956E4 /* RandomImageView.swift */; };
+		4EE5B34E2C88B08400B956E4 /* RandomImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B34D2C88B08400B956E4 /* RandomImageDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4EE5B3462C86AF2300B956E4 /* UpbitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitAPI.swift; sourceTree = "<group>"; };
 		4EE5B3482C87EEA600B956E4 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		4EE5B34B2C8892AD00B956E4 /* RandomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageView.swift; sourceTree = "<group>"; };
+		4EE5B34D2C88B08400B956E4 /* RandomImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				4EE5B34B2C8892AD00B956E4 /* RandomImageView.swift */,
+				4EE5B34D2C88B08400B956E4 /* RandomImageDetailView.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				4EE5B3372C85563700B956E4 /* BasicAnimationView.swift in Sources */,
 				4EE5B3472C86AF2300B956E4 /* UpbitAPI.swift in Sources */,
 				4EE5B3292C8542CB00B956E4 /* SwiftUINetworkApp.swift in Sources */,
+				4EE5B34E2C88B08400B956E4 /* RandomImageDetailView.swift in Sources */,
 				4EE5B34C2C8892AD00B956E4 /* RandomImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -45,6 +45,7 @@ struct RandomImageView: View {
                         .frame(width: 100, height: 150)
                     }
                 }
+                .padding(.horizontal, 20)
             }
             
         }

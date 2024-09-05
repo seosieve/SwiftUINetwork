@@ -9,13 +9,15 @@ import SwiftUI
 
 struct RandomImageView: View {
     
+    @State var text = "Section"
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 60) {
-                    imageSection()
-                    imageSection()
-                    imageSection()
+                    ForEach(0..<3) { index in
+                        imageSection()
+                    }
                 }
                 .padding(.top, 30)
             }
@@ -24,15 +26,16 @@ struct RandomImageView: View {
     }
     
     func imageSection() -> some View {
+        
         VStack(alignment: .leading) {
-            Text("Section 1")
+            Text(text)
                 .bold()
                 .font(.title)
                 .padding(.horizontal, 20)
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(0..<20) { value in
-                        navigationImageView()
+                        navigationImageView(text: $text)
                     }
                 }
                 .padding(.horizontal, 20)
@@ -40,13 +43,13 @@ struct RandomImageView: View {
         }
     }
     
-    func navigationImageView() -> some View {
+    func navigationImageView(text: Binding<String>) -> some View {
         
         let randomNumber = Int.random(in: 1...100)
-        var url = URL(string: "https://picsum.photos/id/\(randomNumber)/100/150")
+        let url = URL(string: "https://picsum.photos/id/\(randomNumber)/100/150")
         
         return NavigationLink {
-            RandomImageDetailView(url: url)
+            RandomImageDetailView(text: $text, url: url)
         } label: {
             imageView(url: url)
         }

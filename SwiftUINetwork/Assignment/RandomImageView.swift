@@ -46,7 +46,7 @@ struct RandomImageView: View {
     func navigationImageView(text: Binding<String>) -> some View {
         
         let randomNumber = Int.random(in: 1...100)
-        let url = URL(string: "https://picsum.photos/id/\(randomNumber)/100/150")
+        let url = URL(string: "https://picsum.photos/100/150")
         
         return NavigationLink {
             RandomImageDetailView(text: $text, url: url)

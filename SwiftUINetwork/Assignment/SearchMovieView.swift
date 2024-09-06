@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-enum Genre {
+enum Genre: String, CaseIterable {
     case 스릴러
     case 공포
+    case 로맨스
+    case 애니메이션
+    case 가족
 }
 
-struct Movie {
+struct Movie: Hashable, Identifiable {
+    let id = UUID()
     let genre: Genre
     let index: Int
 }
@@ -20,18 +24,19 @@ struct Movie {
 struct SearchMovieView: View {
     
     @State var text = ""
-    @State var movie = Movie(genre: Genre.공포, index: 3)
+    @State var movie = [Movie(genre: Genre.공포, index: 3)]
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(movie, id: \.self) { _ in
+                ForEach(movie, id: \.self) { movie in
                     NavigationLink {
                         ContentView()
                     } label: {
                         HStack {
                             Image(systemName: "person")
-                            Text("awddwad")
+                            Text(movie.genre.rawValue)
+                            Text("\(movie.index)")
                         }
                     }
                 }
@@ -44,7 +49,10 @@ struct SearchMovieView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
-                        print("aa")
+                        let newGenre = Genre.allCases.randomElement()!
+                        let newIndex = Int.random(in: 1...10)
+                        let newMovie = Movie(genre: newGenre, index: newIndex)
+                        movie.append(newMovie)
                     }, label: {
                         Text("추가")
                     })

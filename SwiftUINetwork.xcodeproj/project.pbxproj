@@ -110,8 +110,8 @@
 		4EE5B3532C8C45D600B956E4 /* MiniProject */ = {
 			isa = PBXGroup;
 			children = (
-				4EE5B3542C8C45ED00B956E4 /* CoinTrendingView.swift */,
 				4EE5B3562C8C462B00B956E4 /* CoinTabView.swift */,
+				4EE5B3542C8C45ED00B956E4 /* CoinTrendingView.swift */,
 			);
 			path = MiniProject;
 			sourceTree = "<group>";

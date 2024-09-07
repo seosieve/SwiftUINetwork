@@ -9,7 +9,24 @@ import SwiftUI
 
 struct CoinTrendingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                ForEach(0..<100) { _ in
+                    Text("Hello, World!")
+                        .frame(maxWidth: .infinity, minHeight: 100)
+                }
+            }
+            .navigationTitle("Crypto Coin")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        print("aaa")
+                    }, label: {
+                        Circle()
+                    })
+                }
+            }
+        }
     }
 }
 

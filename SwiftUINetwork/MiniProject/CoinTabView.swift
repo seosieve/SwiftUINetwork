@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct CoinTabView: View {
+    
+    init() {
+        ///UIKit과 똑같이 Appearance 적용
+        let standardAppearance = UITabBarAppearance()
+        standardAppearance.backgroundColor = .white
+        standardAppearance.shadowColor = UIColor(Color.gray.opacity(0.4))
+        
+        UITabBar.appearance().standardAppearance = standardAppearance
+        UITabBar.appearance().scrollEdgeAppearance = standardAppearance
+    }
+    
     var body: some View {
         TabView {
-            Text("The First Tab")
+            CoinTrendingView()
                 .tabItem {
                     Image(systemName: "1.square.fill")
                     Text("First")
@@ -31,7 +42,7 @@ struct CoinTabView: View {
                     Text("Fourth")
                 }
         }
-        .font(.headline)
+        .tint(.green)
     }
 }
 

@@ -20,6 +20,8 @@
 		4EE5B34C2C8892AD00B956E4 /* RandomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B34B2C8892AD00B956E4 /* RandomImageView.swift */; };
 		4EE5B34E2C88B08400B956E4 /* RandomImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B34D2C88B08400B956E4 /* RandomImageDetailView.swift */; };
 		4EE5B3522C8B4C8F00B956E4 /* SearchMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3512C8B4C8F00B956E4 /* SearchMovieView.swift */; };
+		4EE5B3552C8C45ED00B956E4 /* CoinTrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3542C8C45ED00B956E4 /* CoinTrendingView.swift */; };
+		4EE5B3572C8C462B00B956E4 /* CoinTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3562C8C462B00B956E4 /* CoinTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		4EE5B34B2C8892AD00B956E4 /* RandomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageView.swift; sourceTree = "<group>"; };
 		4EE5B34D2C88B08400B956E4 /* RandomImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageDetailView.swift; sourceTree = "<group>"; };
 		4EE5B3512C8B4C8F00B956E4 /* SearchMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieView.swift; sourceTree = "<group>"; };
+		4EE5B3542C8C45ED00B956E4 /* CoinTrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTrendingView.swift; sourceTree = "<group>"; };
+		4EE5B3562C8C462B00B956E4 /* CoinTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		4EE5B3272C8542CB00B956E4 /* SwiftUINetwork */ = {
 			isa = PBXGroup;
 			children = (
+				4EE5B3532C8C45D600B956E4 /* MiniProject */,
 				4EE5B34A2C88929900B956E4 /* Assignment */,
 				4EE5B3282C8542CB00B956E4 /* SwiftUINetworkApp.swift */,
 				4EE5B32A2C8542CB00B956E4 /* ContentView.swift */,
@@ -100,6 +105,15 @@
 				4EE5B3512C8B4C8F00B956E4 /* SearchMovieView.swift */,
 			);
 			path = Assignment;
+			sourceTree = "<group>";
+		};
+		4EE5B3532C8C45D600B956E4 /* MiniProject */ = {
+			isa = PBXGroup;
+			children = (
+				4EE5B3542C8C45ED00B956E4 /* CoinTrendingView.swift */,
+				4EE5B3562C8C462B00B956E4 /* CoinTabView.swift */,
+			);
+			path = MiniProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,8 @@
 				4EE5B3432C86A89E00B956E4 /* MoneyView.swift in Sources */,
 				4EE5B3492C87EEA600B956E4 /* NavigationLazyView.swift in Sources */,
 				4EE5B32B2C8542CB00B956E4 /* ContentView.swift in Sources */,
+				4EE5B3552C8C45ED00B956E4 /* CoinTrendingView.swift in Sources */,
+				4EE5B3572C8C462B00B956E4 /* CoinTabView.swift in Sources */,
 				4EE5B3522C8B4C8F00B956E4 /* SearchMovieView.swift in Sources */,
 				4EE5B3412C86995C00B956E4 /* CoinView.swift in Sources */,
 				4EE5B3372C85563700B956E4 /* BasicAnimationView.swift in Sources */,

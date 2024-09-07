@@ -10,10 +10,12 @@ import SwiftUI
 struct CoinTrendingView: View {
     var body: some View {
         NavigationView {
-            ScrollView {
-                ForEach(0..<100) { _ in
-                    Text("Hello, World!")
-                        .frame(maxWidth: .infinity, minHeight: 100)
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(0..<4) { _ in
+                        Rectangle()
+                            .frame(width: 200, height: 100)
+                    }
                 }
             }
             .navigationTitle("Crypto Coin")
@@ -22,11 +24,34 @@ struct CoinTrendingView: View {
                     Button(action: {
                         print("aaa")
                     }, label: {
-                        Circle()
+                        ProfileImage()
                     })
                 }
             }
         }
+    }
+}
+
+struct ProfileImage: View {
+    
+    let url = URL(string: "https://picsum.photos/40/40")
+    
+    var body: some View {
+        AsyncImage(url: url) { value in
+            switch value {
+            case .empty:
+                ProgressView()
+                    .frame(width: 40, height: 40)
+            case .success(let image):
+                image
+            case .failure(_):
+                ProgressView()
+            @unknown default:
+                ProgressView()
+            }
+        }
+        .clipShape(.circle)
+        .overlay(Circle().stroke(.green, lineWidth: 3))
     }
 }
 

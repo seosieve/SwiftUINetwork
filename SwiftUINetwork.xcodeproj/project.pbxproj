@@ -22,6 +22,8 @@
 		4EE5B3522C8B4C8F00B956E4 /* SearchMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3512C8B4C8F00B956E4 /* SearchMovieView.swift */; };
 		4EE5B3552C8C45ED00B956E4 /* CoinTrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3542C8C45ED00B956E4 /* CoinTrendingView.swift */; };
 		4EE5B3572C8C462B00B956E4 /* CoinTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3562C8C462B00B956E4 /* CoinTabView.swift */; };
+		4EE5B3592C8E862600B956E4 /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B3582C8E862500B956E4 /* CountView.swift */; };
+		4EE5B35B2C8E925700B956E4 /* TamagochiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5B35A2C8E925700B956E4 /* TamagochiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		4EE5B3512C8B4C8F00B956E4 /* SearchMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieView.swift; sourceTree = "<group>"; };
 		4EE5B3542C8C45ED00B956E4 /* CoinTrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTrendingView.swift; sourceTree = "<group>"; };
 		4EE5B3562C8C462B00B956E4 /* CoinTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTabView.swift; sourceTree = "<group>"; };
+		4EE5B3582C8E862500B956E4 /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
+		4EE5B35A2C8E925700B956E4 /* TamagochiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagochiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				4EE5B3462C86AF2300B956E4 /* UpbitAPI.swift */,
 				4EE5B32C2C8542CE00B956E4 /* Assets.xcassets */,
 				4EE5B32E2C8542CE00B956E4 /* Preview Content */,
+				4EE5B3582C8E862500B956E4 /* CountView.swift */,
+				4EE5B35A2C8E925700B956E4 /* TamagochiView.swift */,
 			);
 			path = SwiftUINetwork;
 			sourceTree = "<group>";
@@ -194,8 +200,10 @@
 				4EE5B3572C8C462B00B956E4 /* CoinTabView.swift in Sources */,
 				4EE5B3522C8B4C8F00B956E4 /* SearchMovieView.swift in Sources */,
 				4EE5B3412C86995C00B956E4 /* CoinView.swift in Sources */,
+				4EE5B3592C8E862600B956E4 /* CountView.swift in Sources */,
 				4EE5B3372C85563700B956E4 /* BasicAnimationView.swift in Sources */,
 				4EE5B3472C86AF2300B956E4 /* UpbitAPI.swift in Sources */,
+				4EE5B35B2C8E925700B956E4 /* TamagochiView.swift in Sources */,
 				4EE5B3292C8542CB00B956E4 /* SwiftUINetworkApp.swift in Sources */,
 				4EE5B34E2C88B08400B956E4 /* RandomImageDetailView.swift in Sources */,
 				4EE5B34C2C8892AD00B956E4 /* RandomImageView.swift in Sources */,

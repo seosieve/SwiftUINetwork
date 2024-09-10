@@ -46,12 +46,13 @@ struct RandomImageView: View {
     func navigationImageView(text: Binding<String>) -> some View {
         
         let randomNumber = Int.random(in: 1...100)
-        let url = URL(string: "https://picsum.photos/100/150")
+        
+        @StateObject var viewModel = ImageViewModel()
         
         return NavigationLink {
-            RandomImageDetailView(text: $text, url: url)
+            RandomImageDetailView(text: $text, url: viewModel.url)
         } label: {
-            imageView(url: url)
+            imageView(url: viewModel.url)
         }
     }
     
@@ -71,6 +72,10 @@ struct RandomImageView: View {
         }
         .frame(width: 100, height: 150)
     }
+}
+
+class ImageViewModel: ObservableObject {
+    @Published var url = URL(string: "https://picsum.photos/id/\(Int.random(in: 1...100))/100/150")
 }
 
 #Preview {
